@@ -1,0 +1,16 @@
+.bg-cstm{
+    background: linear-gradient(rgba(33, 45, 90, 0.4), rgba(33, 45, 90, 0.4)), url(./media/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-cstm{
+    border-radius: 50%;
+    width: 45%;
+    height: 45%;
+    border: 2px solid rgb(33, 45, 90);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
