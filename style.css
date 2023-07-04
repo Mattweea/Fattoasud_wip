@@ -1,3 +1,7 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
 .bg-cstm{
     background: linear-gradient(rgba(33, 45, 90, 0.4), rgba(33, 45, 90, 0.4)), url(./media/background.jpg);
     background-position: center;
@@ -5,14 +9,43 @@
 }
 
 .img-cstm{
+    height: 300px;
+    transform: scale(1.6);
+}
+
+.img-wrapper{
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    width: 45%;
-    height: 45%;
+    background-color: rgba(255, 255, 255, 0.5);
     border: 2px solid rgb(33, 45, 90);
 }
 
-*{
-    font-family: 'Nunito', sans-serif;
+.clip-cstm{
+    clip-path: polygon(0 0, 65% 0, 100% 100%, 0 100%);
+    background-color: rgba(255, 255, 255, 0.505);
+    backdrop-filter: blur(5px);
+    color: rgb(33, 45, 90);
 }
 
-/* DA SISTEMARE HOMEPAGE CON BG TAGLIATO IN DIAGONALE E AGGIUNGERE LOADING SULLA DESTRA */
+@media screen and (max-width: 480px){
+    
+    .img-cstm{
+        height: 225px;
+        transform: scale(1.6);
+    }
+
+    .img-wrapper{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        border: 2px solid rgb(33, 45, 90);
+    }
+
+    .clip-cstm{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: #c49c6b;
+        color: rgb(33, 45, 90);
+    }
+}
